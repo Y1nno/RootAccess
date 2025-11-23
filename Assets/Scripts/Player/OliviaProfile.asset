@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OliviaProfile
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
   characterName: Olivia
-  animatorController: {fileID: 9100000, guid: c9bf26a1ead69ad4fa7940a3a6b9570a, type: 2}
+  animatorController: {fileID: 9100000, guid: 9f43366a90420894aa59982886802a01, type: 2}
   idleSprite: {fileID: 1179546094467535478, guid: 94f10e907d858ba4eb5ea6e34469af22,
     type: 3}
   colliderSize: {x: 1, y: 1}
