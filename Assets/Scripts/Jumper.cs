@@ -17,11 +17,12 @@ public class Jumper : MonoBehaviour
     public AudioClip jumpSound;
 
     //A boolean that detects whether or not we are touching something. Allowing us to jump again.
-    private bool isOnGround;
+    public bool isOnGround;
     private bool hasDoubleJumped;
 
     //Reference variable to attached Rigidbody2D
     private Rigidbody2D myRigidbody;
+    private Animator animator;
 
     private PlayerCharacterSwapper swapper;
 
@@ -30,6 +31,7 @@ public class Jumper : MonoBehaviour
     {
         //Store attached Rigidbody2D
         myRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         swapper = GetComponentInParent<PlayerCharacterSwapper>();
     }
@@ -55,6 +57,8 @@ public class Jumper : MonoBehaviour
             {
                 GetComponent<AudioSource>().PlayOneShot(jumpSound);
             }
+
+            animator.SetTrigger("Jump");
         }
     }
 

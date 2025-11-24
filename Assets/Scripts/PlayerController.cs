@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private Jumper jumper;
     private FireProjectile fireProjectile;
     private PlayerCharacterSwapper swapper;
+    private Animator animator;
+    private Rigidbody2D myRigidbody;
 
     void Start()
     {
@@ -21,6 +23,8 @@ public class PlayerController : MonoBehaviour
         jumper = gameObject.GetComponent<Jumper>();
         fireProjectile = gameObject.GetComponent<FireProjectile>();
         swapper = GetComponentInParent<PlayerCharacterSwapper>();
+        animator = GetComponent<Animator>();
+        myRigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -51,6 +55,7 @@ public class PlayerController : MonoBehaviour
         {
             //If the jump key is pressed... jump!
             jumper.Jump();
+            
         }
         if (swapper.currentIndex == 1)
         {
@@ -61,5 +66,15 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        if (!jumper.GetIsOnGround() && myRigidbody.linearVelocity.y <= 0 && !animator.GetBool("Falling"))
+        {
+            animator.SetBool("Falling", true);
+        }
+
+        if (animator.GetBool("Falling") && jumper.GetIsOnGround())
+        {
+            animator.SetBool("Falling", false);
+            animator.SetTrigger("Land");
+        }
     }
 }
