@@ -9,13 +9,12 @@ public class FireProjectile : MonoBehaviour
 
     public float projectileSpeed = 10f;
     public float minimumCountdown = 0.5f;  // time between shots
-    public float countdownTimer = 0f;
+    public float cooldownTimer = 0f;
 
     void Update()
     {
-        // reduce the timer every frame
-        if (countdownTimer > 0)
-            countdownTimer -= Time.deltaTime;
+        if (cooldownTimer > 0)
+            cooldownTimer -= Time.deltaTime;
     }
 
     public void Fire()
@@ -24,7 +23,6 @@ public class FireProjectile : MonoBehaviour
         Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
         rb.linearVelocity = transform.right * projectileSpeed;
 
-        //set countdown
-        countdownTimer = minimumCountdown;
+        cooldownTimer = minimumCountdown;
     }
 }

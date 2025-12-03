@@ -16,8 +16,11 @@ GameObject:
   - component: {fileID: 1905362301917387769}
   - component: {fileID: 1905362301917387768}
   - component: {fileID: 376898446640392168}
+  - component: {fileID: 7382478281249335866}
+  - component: {fileID: 74795575813261109}
+  - component: {fileID: 5880917315861133115}
   m_Layer: 0
-  m_Name: Patrolling Enemy
+  m_Name: Woodie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,9 +36,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.59, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2167694398743129835}
+  - {fileID: 5403992627239526946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1905362301917387747
@@ -111,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 100
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -186,8 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d7236d6bb6d455a86c2e9d3db2c01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 10
-  maximumSpeed: 2
+  acceleration: 400
+  maximumSpeed: 400
 --- !u!114 &1905362301917387768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,8 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846955a96dff64c19972cecbfda8d04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  looksAheadDistance: 1
-  looksDownwardDistance: 1
+  looksAheadDistance: 20
+  looksDownwardDistance: 20
   raycastLayermask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -220,3 +225,148 @@ MonoBehaviour:
   maximumHitPoints: 2
   faction: 1
   soundOnHit: {fileID: 0}
+--- !u!114 &7382478281249335866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905362301917387756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c4676d971304941a9c9d9a196c6e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyStateMachine
+  stateAssets:
+  - {fileID: 488661229008748877}
+  - {fileID: 339063742816089027}
+  startingStateId: Patrol
+  currentState: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &74795575813261109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905362301917387756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6b17da7aa026a42ac2ad045142b937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodiePatrolState
+  stateId: Unnamed
+  pauseEvery: 1
+  IdleStateID: Idle
+  patrolController: {fileID: 0}
+--- !u!114 &5880917315861133115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905362301917387756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6b17da7aa026a42ac2ad045142b937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodiePatrolState
+  stateId: Unnamed
+  pauseEvery: 1
+  IdleStateID: Idle
+  patrolController: {fileID: 0}
+--- !u!1 &3333550202524405021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5403992627239526946}
+  - component: {fileID: 339063742816089027}
+  m_Layer: 0
+  m_Name: WoodieIdleState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5403992627239526946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333550202524405021}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.03974686, y: -0.07624016, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1905362301917387746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &339063742816089027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333550202524405021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cb806defefe4f4588ef8d837c63e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodieIdleState
+  stateId: Idle
+  endAfter: 1
+  PatrolStateID: Patrol
+--- !u!1 &5816833958449368445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2167694398743129835}
+  - component: {fileID: 488661229008748877}
+  m_Layer: 0
+  m_Name: WoodiePatrolState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2167694398743129835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816833958449368445}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1905362301917387746}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488661229008748877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816833958449368445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6b17da7aa026a42ac2ad045142b937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WoodiePatrolState
+  stateId: Patrol
+  pauseEvery: 10
+  IdleStateID: Idle
+  patrolController: {fileID: 0}

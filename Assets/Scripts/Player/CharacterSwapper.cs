@@ -60,7 +60,6 @@ public class PlayerCharacterSwapper : MonoBehaviour
         //Debug.Log($"[Swapper] Swapped from '{oldProfile.characterName}' to '{newProfile.characterName}' (index {oldIndex} -> {currentIndex}).");
     }
 
-    //Skeleton for applying per-character data
     private void ApplyProfile(CharacterProfile profile)
     {
         if (profile == null)
@@ -73,6 +72,7 @@ public class PlayerCharacterSwapper : MonoBehaviour
         if (animator != null && profile.animatorController != null)
             animator.runtimeAnimatorController = profile.animatorController;
         animator.SetInteger("ProfileID", currentIndex);
+        animator.SetTrigger("Swapping");
 
         if (spriteRenderer != null && profile.idleSprite != null)
             spriteRenderer.sprite = profile.idleSprite;

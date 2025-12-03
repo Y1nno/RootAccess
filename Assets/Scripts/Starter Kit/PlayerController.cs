@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     private PlayerCharacterSwapper swapper;
     private Animator animator;
     private Rigidbody2D myRigidbody;
+    private KickManager kicker;
+
+    public GameObject kickManager;
 
     void Start()
     {
@@ -24,7 +27,8 @@ public class PlayerController : MonoBehaviour
         fireProjectile = gameObject.GetComponent<FireProjectile>();
         swapper = GetComponentInParent<PlayerCharacterSwapper>();
         animator = GetComponent<Animator>();
-        myRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        myRigidbody = GetComponent<Rigidbody2D>();
+        kicker = kickManager.GetComponent<KickManager>();
     }
 
     // Update is called once per frame
@@ -57,13 +61,20 @@ public class PlayerController : MonoBehaviour
             jumper.Jump();
             
         }
-        if (swapper.currentIndex == 1)
+        if (swapper.currentIndex == 1) // Olivia specific inputs
         {
-            if (Input.GetKey(KeyCode.E) && fireProjectile.countdownTimer <= 0f)
+            if (Input.GetKey(KeyCode.E) && fireProjectile.cooldownTimer <= 0f)
             {
                 fireProjectile.Fire();
             }
 
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.E) && kicker.cooldownTimer <= 0f)
+            {
+                kicker.Fire();
+            }
         }
 
         if (!jumper.GetIsOnGround() && myRigidbody.linearVelocity.y <= 0 && !animator.GetBool("Falling"))

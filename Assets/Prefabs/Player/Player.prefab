@@ -111,6 +111,54 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   offset: {x: 0, y: 0, z: 0}
   flipH: 0
+--- !u!1 &3255702959107263560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5748333413153857472}
+  - component: {fileID: 5081951798300832510}
+  m_Layer: 0
+  m_Name: KickManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5748333413153857472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3255702959107263560}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.6, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 142146502112766792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5081951798300832510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3255702959107263560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43abfec464eb90d42b28cb23ee8cbb1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KickManager
+  cooldown: 0.5
+  cooldownTimer: 0
+  projectilePrefab: {fileID: 6239157294008310794, guid: d2e255fc8c105cd42bbe8e1808c3839e,
+    type: 3}
 --- !u!1 &3610302416284890013
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +247,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 831735834795524784}
+  - {fileID: 5748333413153857472}
   m_Father: {fileID: 4005768236145686670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2807291207155092675
@@ -327,6 +376,7 @@ MonoBehaviour:
   jumpBonusModifier: 1
   doubleJumpAllowed: 1
   jumpSound: {fileID: 8300000, guid: 18bcfad34550f49018c430b746ef8c1a, type: 3}
+  isOnGround: 0
 --- !u!114 &8174048844810726096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a890b4fb831c3438ab544a630e206d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  kickManager: {fileID: 3255702959107263560}
 --- !u!50 &7765533160265324408
 Rigidbody2D:
   serializedVersion: 5
@@ -405,7 +456,7 @@ MonoBehaviour:
   firePoint: {fileID: 831735834795524784}
   projectileSpeed: 100
   minimumCountdown: 0.5
-  countdownTimer: 0
+  cooldownTimer: 0
 --- !u!1 &7504973778050804796
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,4 +543,4 @@ MonoBehaviour:
   firePoint: {fileID: 831735834795524784}
   projectileSpeed: 1000
   minimumCountdown: 0.5
-  countdownTimer: 0
+  cooldownTimer: 0
