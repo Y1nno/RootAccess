@@ -6,6 +6,12 @@ Root Access is a single-player action-platformer metroidvania where two scientis
 - **Core Fantasy:** You are a two-person team, cutting through obstacles using brains, agility, and improvisation to stop the impending apocalypse.  
 - **Gameplay Hook:** Fast, fluid **character swapping** where each protagonist has distinct abilities and ability progression.
 
+## To Run 
+- Open in unity editor version 6.0+
+- Navigate through project Assets>Scenes>OfficialLevels
+- Open Scene "Main Menu"
+- Play Scene
+
 ## Audio Collaboration
 
 > This section is especially for SFCM students partnering with the IGA Level 2 course.
