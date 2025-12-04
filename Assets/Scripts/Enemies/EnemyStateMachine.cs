@@ -15,26 +15,28 @@ public class EnemyStateMachine : MonoBehaviour
     // Lookup table: ID -> state
     private Dictionary<string, EnemyState> _stateLookup;
 
-    [Header("References")]
-    public Transform player;
+    [HideInInspector] public Transform player;
     
 
     private void Awake()
     {
         BuildLookup();
+        
     }
 
     private void Start()
     {
         ChangeState(startingStateId);
+        player = Player.Instance.gameObject.transform.GetChild(0).GetComponent<Transform>();
     }
 
     private void Update()
     {
         if (currentState != null)
         {
-            currentState.Tick(this, Time.deltaTime);
+            currentState.Tick(this);
         }
+        
     }
 
     private void BuildLookup()

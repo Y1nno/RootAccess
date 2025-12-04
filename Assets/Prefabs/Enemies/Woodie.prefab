@@ -367,6 +367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodiePatrolState
   stateId: Patrol
-  pauseEvery: 10
+  pauseEvery: 5
   IdleStateID: Idle
   patrolController: {fileID: 0}

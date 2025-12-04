@@ -6,6 +6,6 @@ public abstract class EnemyState : MonoBehaviour
     public string stateId = "Unnamed";
 
     public abstract void Enter(EnemyStateMachine machine);
-    public abstract void Tick(EnemyStateMachine machine, float deltaTime);
+    public abstract void Tick(EnemyStateMachine machine);
     public abstract void Exit(EnemyStateMachine machine);
 }

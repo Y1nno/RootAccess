@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: db329d25f25214968af4e6442af91cf1
   - enabled: 1
-    path: Assets/Scenes/west.unity
+    path: Assets/Scenes/Test Levels/west.unity
     guid: e860019da565e064b9f9a1c2e4d0ac55
   - enabled: 1
-    path: Assets/Scenes/start.unity
+    path: Assets/Scenes/Test Levels/start.unity
     guid: 9b668e2f35a76f845a8547b77bbea1eb
   - enabled: 1
-    path: Assets/Scenes/north.unity
+    path: Assets/Scenes/Test Levels/north.unity
     guid: 6fb3839e94c1dad4d89dc045f8889c01
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

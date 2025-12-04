@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1623953110757625055}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08272, y: -1.60844, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 7765533160265324408}
   - component: {fileID: 4020566498142274683}
   - component: {fileID: 4646028759421573196}
+  - component: {fileID: 571232858355464243}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -457,6 +458,21 @@ MonoBehaviour:
   projectileSpeed: 100
   minimumCountdown: 0.5
   cooldownTimer: 0
+--- !u!114 &571232858355464243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204115071694406157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991ed8ca5a1054f6a8f37a11f44ed976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destructible
+  maximumHitPoints: 3
+  faction: 1
+  soundOnHit: {fileID: 0}
 --- !u!1 &7504973778050804796
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,9 +20,9 @@ public class WoodiePatrolState : EnemyState
            patrolController.enabled = true;
     }
 
-    public override void Tick(EnemyStateMachine machine, float deltaTime)
+    public override void Tick(EnemyStateMachine machine)
     {
-        internalTimer += deltaTime;
+        internalTimer += Time.deltaTime;
         if (internalTimer >= pauseEvery)
         {
             internalTimer = 0;

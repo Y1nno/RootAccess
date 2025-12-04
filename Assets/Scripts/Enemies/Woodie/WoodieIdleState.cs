@@ -1,6 +1,5 @@
 using UnityEngine;
 
-//[CreateAssetMenu(menuName = "Scripts/Enemies/Woodie/Patrol")]
 public class WoodieIdleState : EnemyState
 {
     public float endAfter = 1f;
@@ -16,9 +15,9 @@ public class WoodieIdleState : EnemyState
 
     }
 
-    public override void Tick(EnemyStateMachine machine, float deltaTime)
+    public override void Tick(EnemyStateMachine machine)
     {
-        internalTimer += deltaTime;
+        internalTimer += Time.deltaTime;
         if (internalTimer >= endAfter)
         {
             internalTimer = 0;
