@@ -5,10 +5,17 @@ public class StateSwapperTriggerArea : MonoBehaviour
 
     public EnemyState stateOnEnterArea;
     public EnemyState stateOnExitArea;
+    
     private EnemyStateMachine stateMachine;
 
-    public float timeToLockOff = 10f;
-    private float internalTimer;
+    [Tooltip("How long the state persists in tracking mode after the player leaves the targeting area")]
+    public float timeToLockOff = 5f;
+    
+
+    private float internalLockOffTimer;
+    
+
+
 
     void Start()
     {
@@ -21,21 +28,21 @@ public class StateSwapperTriggerArea : MonoBehaviour
         if (_other.CompareTag("Player") && stateMachine)
         {
             //Debug.Log("Player Entered Turret Area");
-            internalTimer = timeToLockOff + 1f;
+            internalLockOffTimer = timeToLockOff + 1f;
             stateMachine.ChangeState(stateOnEnterArea.stateId);
         }
     }
 
     public void Update()
     {
-        if (internalTimer <= timeToLockOff)
+        if (internalLockOffTimer <= timeToLockOff)
         {
-            internalTimer -= Time.deltaTime;
+            internalLockOffTimer -= Time.deltaTime;
         }
         
-        if (internalTimer <= 0)
+        if (internalLockOffTimer <= 0)
         {
-            internalTimer = timeToLockOff + 1f; // Sets the timer above timeToLockOff, making it fail the if statement on line 23
+            internalLockOffTimer = timeToLockOff + 1f; // Sets the timer above timeToLockOff, making it fail the conditional on line 23
             //Debug.Log("LockOff Timer Ended");
             stateMachine.ChangeState(stateOnExitArea.stateId);
         }
@@ -48,7 +55,7 @@ public class StateSwapperTriggerArea : MonoBehaviour
         if (_other.CompareTag("Player") && stateMachine)
         {
             //Debug.Log("LockOff Timer Started");
-            internalTimer = timeToLockOff;
+            internalLockOffTimer = timeToLockOff;
         }
     }
 }

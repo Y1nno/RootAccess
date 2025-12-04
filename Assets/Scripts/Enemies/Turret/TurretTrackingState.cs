@@ -5,7 +5,12 @@ public class TurretTrackingState : EnemyState
 {
     public Transform turretTop;
     public EnemyState idleState;
+    public EnemyState firingState;
     [HideInInspector] public Transform player;
+
+    [Tooltip("Time between shots")]
+    public float fireRate = 2f;
+    private float internalFireRateTimer;
 
     public float turnRate = 10f;
 
@@ -15,11 +20,22 @@ public class TurretTrackingState : EnemyState
     {
         player = machine.player;
         //Debug.Log("State Entered: Tracking");
+        internalFireRateTimer = fireRate;
     }
 
     public override void Tick(EnemyStateMachine machine)
     {
         if (!turretTop || !player) return;
+
+        internalFireRateTimer -= Time.deltaTime;
+
+        if (internalFireRateTimer <= 0)
+        {
+
+            internalFireRateTimer = fireRate;
+            machine.ChangeState(firingState.stateId);
+            return;
+        }
 
         Transform muzzle = turretTop.GetChild(1); 
         Transform tip = turretTop.GetChild(0);

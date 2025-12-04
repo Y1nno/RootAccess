@@ -11,25 +11,23 @@ public class Destructor : MonoBehaviour
     [Tooltip("How hard anything this damages should be pushed back")]
     public float knockbackForce = 0f;
 
-    //OnCollisionEnter2D is a built in Unity function that happens at the start of any collision with this game object
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        //See if the thing we ran into has a Destructible
-        Destructible destrucible =
-            collision.gameObject.GetComponent<Destructible>();
+        Destructible destructible = collision.gameObject.GetComponent<Destructible>();
 
-        //If it does and it's a different faction than us...
-        if( destrucible && destrucible.faction != faction )
+        if (destructible && destructible.faction != faction)
         {
-            //Make it take damage
-            destrucible.TakeDamage(damage);
+            destructible.TakeDamage(damage);
 
-            //And push it back if it has a rigidbody2d
-            Vector3 knockbackVector = collision.transform.position - transform.position;
-            if (collision.gameObject.GetComponent<Rigidbody2D>())
+            Rigidbody2D rb = collision.rigidbody;
+
+            if (rb != null)
             {
-                collision.gameObject.GetComponent<Rigidbody2D>().AddForceAtPosition(knockbackVector * knockbackForce, transform.position);
+                Vector2 knockbackDir = (collision.transform.position - transform.position).normalized;
+
+                rb.AddForce(knockbackDir * knockbackForce, ForceMode2D.Impulse);
             }
         }
     }
+
 }
