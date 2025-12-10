@@ -34,9 +34,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("Running", false);
+        
         //Moving Right
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
+            if (!animator.GetBool("Running"))
+            {
+                animator.SetBool("Running", true);
+            }
+                
             //When right key is pressed, accelerate towards the right...
             mover.AccelerateInDirection(new Vector2(1f, 0f));
 
@@ -47,6 +54,11 @@ public class PlayerController : MonoBehaviour
         //Moving Left
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
+            if (!animator.GetBool("Running"))
+            {
+                animator.SetBool("Running", true);
+            }
+
             //When left key is pressed, accelerate towards the left...
             mover.AccelerateInDirection(new Vector2(-1f, 0f));
 

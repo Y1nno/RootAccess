@@ -31,7 +31,7 @@ public class LaserSpikeDestructor : MonoBehaviour
 
         if (destructible && destructible.faction != faction)
         {
-            Debug.Log("triggered");
+            //Debug.Log("triggered");
 
             destructible.TakeDamage(damage);
 

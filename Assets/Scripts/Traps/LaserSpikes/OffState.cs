@@ -16,7 +16,7 @@ public class OffState : EnemyState
     public override void Enter(EnemyStateMachine machine)
     {
         internalTimer += offStateLength;
-        Debug.Log("Off");
+        //Debug.Log("Off");
     }
 
     public override void Tick(EnemyStateMachine machine)

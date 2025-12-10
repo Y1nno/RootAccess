@@ -13,7 +13,7 @@ public class OnState : EnemyState
     {
         animator.SetTrigger("Activate");
         internalLengthTimer = onStateLength;
-        Debug.Log("On");
+        //Debug.Log("On");
     }
 
     public override void Tick(EnemyStateMachine machine)
