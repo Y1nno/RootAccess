@@ -11,6 +11,8 @@ public class Destructible : MonoBehaviour
     [Tooltip("Which sound to play when this Destructible is damaged")]
     public AudioClip soundOnHit;
 
+    public GameObject healthPanel = null;
+
     //Variable to store our current hitpoints
     private int hitPoints;
 
@@ -19,6 +21,11 @@ public class Destructible : MonoBehaviour
     {
         //Set our hitpoints to our default when the game starts
         hitPoints = maximumHitPoints;
+        if (healthPanel != null)
+        {
+            healthPanel.GetComponent<HealthManager>().UpdateHealthUI(hitPoints, maximumHitPoints);
+        }
+       
     }
 
     //Function to inflict damage on this Destructible
@@ -54,6 +61,8 @@ public class Destructible : MonoBehaviour
         {
             Die();
         }
+
+        healthPanel.GetComponent<HealthManager>().UpdateHealthUI(hitPoints, maximumHitPoints);
     }
 
     //Function called on death

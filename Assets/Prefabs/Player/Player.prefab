@@ -44,7 +44,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.15686275, g: 0.17254902, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -69,7 +69,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 300
+  orthographic size: 600
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -109,7 +109,7 @@ MonoBehaviour:
   target: {fileID: 142146502112766792}
   damping: 0.2
   velocity: {x: 0, y: 0, z: 0}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 10, z: 0}
   flipH: 0
 --- !u!1 &3255702959107263560
 GameObject:
@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 4020566498142274683}
   - component: {fileID: 4646028759421573196}
   - component: {fileID: 571232858355464243}
+  - component: {fileID: 2717613270757978877}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -360,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mover
   acceleration: 600
-  maximumSpeed: 1200
+  maximumSpeed: 500
 --- !u!114 &2186447189918398178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Jumper
   jumpImpulse: 400
   jumpBonusModifier: 1
-  doubleJumpAllowed: 1
+  doubleJumpAllowed: 0
   jumpSound: {fileID: 8300000, guid: 18bcfad34550f49018c430b746ef8c1a, type: 3}
   isOnGround: 0
 --- !u!114 &8174048844810726096
@@ -404,7 +405,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 0.5
   m_AngularDamping: 0.05
   m_GravityScale: 100
   m_Material: {fileID: 0}
@@ -455,9 +456,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 7722754493070979846, guid: b889779d8fb8c4d4b9fd9e87de2e968d,
     type: 3}
   firePoint: {fileID: 831735834795524784}
-  projectileSpeed: 100
+  projectileSpeed: 1000
   minimumCountdown: 0.5
   cooldownTimer: 0
+  canShoot: 0
 --- !u!114 &571232858355464243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +475,20 @@ MonoBehaviour:
   maximumHitPoints: 3
   faction: 1
   soundOnHit: {fileID: 0}
+  healthPanel: {fileID: 0}
+--- !u!114 &2717613270757978877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204115071694406157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871eb2ad4363e0f46987257d6399f796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  respawnChildName: RespawnPoint
 --- !u!1 &7504973778050804796
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +500,7 @@ GameObject:
   - component: {fileID: 4005768236145686670}
   - component: {fileID: 1214201071455472731}
   - component: {fileID: 8312936685949511922}
-  - component: {fileID: 8734029909463752989}
+  - component: {fileID: 4540109075213592196}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -541,8 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56f4546c478ccb4ba6bc27d4c794f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  cameraFollower: {fileID: 0}
---- !u!114 &8734029909463752989
+--- !u!114 &4540109075213592196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -551,12 +566,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7504973778050804796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731c928af6aae7141aaac314ff4bde68, type: 3}
+  m_Script: {fileID: 11500000, guid: 58091a8f30fb9404d947826199c34f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  projectilePrefab: {fileID: 7722754493070979846, guid: b889779d8fb8c4d4b9fd9e87de2e968d,
-    type: 3}
-  firePoint: {fileID: 831735834795524784}
-  projectileSpeed: 1000
-  minimumCountdown: 0.5
-  cooldownTimer: 0
+  canEliDoubleJump: 0
+  canOliviaShoot: 0

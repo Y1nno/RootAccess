@@ -93,4 +93,16 @@ public class Jumper : MonoBehaviour
     {
         jumpBonusModifier = 1f;
     }
+
+    public void ChangeDoubleJump(bool? newBool)
+    {
+        if (newBool != null)
+        {
+            doubleJumpAllowed = newBool.Value;
+        }
+        else
+        {
+            doubleJumpAllowed = !doubleJumpAllowed;
+        }
+    }
 }
