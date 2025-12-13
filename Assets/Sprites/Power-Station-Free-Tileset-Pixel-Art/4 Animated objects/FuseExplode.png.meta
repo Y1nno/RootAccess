@@ -106,7 +106,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -172,12 +172,12 @@ TextureImporter:
       name: FuseExplode_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 55
-        width: 24
-        height: 25
+        x: 0
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: FuseExplode_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 55
-        width: 24
-        height: 25
+        x: 64
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: FuseExplode_2
       rect:
         serializedVersion: 2
-        x: 146
-        y: 28
-        width: 30
-        height: 28
+        x: 128
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: FuseExplode_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 55
-        width: 24
-        height: 25
+        x: 192
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: FuseExplode_4
       rect:
         serializedVersion: 2
-        x: 207
+        x: 256
         y: 0
-        width: 34
+        width: 64
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: FuseExplode_5
       rect:
         serializedVersion: 2
-        x: 266
+        x: 320
         y: 0
-        width: 43
+        width: 64
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: FuseExplode_6
       rect:
         serializedVersion: 2
-        x: 328
+        x: 384
         y: 0
-        width: 49
+        width: 64
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -326,12 +326,12 @@ TextureImporter:
       name: FuseExplode_7
       rect:
         serializedVersion: 2
-        x: 385
+        x: 448
         y: 0
         width: 64
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -348,12 +348,12 @@ TextureImporter:
       name: FuseExplode_8
       rect:
         serializedVersion: 2
-        x: 457
+        x: 512
         y: 0
-        width: 49
+        width: 64
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -370,12 +370,12 @@ TextureImporter:
       name: FuseExplode_9
       rect:
         serializedVersion: 2
-        x: 526
-        y: 26
-        width: 34
-        height: 54
+        x: 576
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: FuseExplode_10
       rect:
         serializedVersion: 2
-        x: 596
-        y: 56
-        width: 24
-        height: 24
+        x: 640
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,12 +414,12 @@ TextureImporter:
       name: FuseExplode_11
       rect:
         serializedVersion: 2
-        x: 660
-        y: 56
-        width: 24
-        height: 24
+        x: 704
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,275 +432,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: FuseExplode_12
-      rect:
-        serializedVersion: 2
-        x: 724
-        y: 56
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 408ddabe605df82b0800000000000000
-      internalID: -5580007187588196348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_13
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 33
-        width: 20
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 664bf5df614953de0800000000000000
-      internalID: -1354013286493866906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_14
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 33
-        width: 20
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 857b2d0186e9dc0c0800000000000000
-      internalID: -4553809478405671080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_15
-      rect:
-        serializedVersion: 2
-        x: 599
-        y: 31
-        width: 19
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8c1b6b598bbd31e0800000000000000
-      internalID: -2216409242977756019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_16
-      rect:
-        serializedVersion: 2
-        x: 668
-        y: 36
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cf11df5faf4e23b0800000000000000
-      internalID: -5535399277346349120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_17
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 0
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b27859eb0ab74f90800000000000000
-      internalID: -6969397338010258759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_18
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 0
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80f7df3197178e3b0800000000000000
-      internalID: -5483007781483217144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_19
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 0
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aacd9a0b9cf40fae0800000000000000
-      internalID: -1517625346752914262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_20
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20705669b00951110800000000000000
-      internalID: 1231048452597942018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_21
-      rect:
-        serializedVersion: 2
-        x: 596
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95b7637c20575f930800000000000000
-      internalID: 4176372884248623961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_22
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 971477661b489def0800000000000000
-      internalID: -82889220666474119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FuseExplode_23
-      rect:
-        serializedVersion: 2
-        x: 724
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7961f32c96f56ca0800000000000000
-      internalID: -6024137776059815553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f94148d805d794846b6316c7708dbb25
     internalID: 0
     vertices: []
     indices: 
@@ -708,25 +444,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       FuseExplode_0: 8466953188123672594
       FuseExplode_1: -1688804906640775492
       FuseExplode_10: 5702977728717256080
       FuseExplode_11: -6894316822846050715
-      FuseExplode_12: -5580007187588196348
-      FuseExplode_13: -1354013286493866906
-      FuseExplode_14: -4553809478405671080
-      FuseExplode_15: -2216409242977756019
-      FuseExplode_16: -5535399277346349120
-      FuseExplode_17: -6969397338010258759
-      FuseExplode_18: -5483007781483217144
-      FuseExplode_19: -1517625346752914262
       FuseExplode_2: 370179223686489435
-      FuseExplode_20: 1231048452597942018
-      FuseExplode_21: 4176372884248623961
-      FuseExplode_22: -82889220666474119
-      FuseExplode_23: -6024137776059815553
       FuseExplode_3: -7404214172201082629
       FuseExplode_4: 2054503846723895014
       FuseExplode_5: 8965857491567500455

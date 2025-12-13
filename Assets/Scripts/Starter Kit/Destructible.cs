@@ -48,7 +48,10 @@ public class Destructible : MonoBehaviour
                 GetComponent<AudioSource>().PlayOneShot(soundOnHit);
             }
 
-            damageFlash.TriggerDamageFlash();
+            if (damageFlash != null)
+            {
+                damageFlash.TriggerDamageFlash();
+            }
         }
     }
 
@@ -73,7 +76,10 @@ public class Destructible : MonoBehaviour
             Die();
         }
 
-        healthPanel.GetComponent<HealthManager>().UpdateHealthUI(hitPoints, maximumHitPoints);
+        if (healthPanel != null)
+        {
+            healthPanel.GetComponent<HealthManager>().UpdateHealthUI(hitPoints, maximumHitPoints);
+        }
     }
 
     //Function called on death
