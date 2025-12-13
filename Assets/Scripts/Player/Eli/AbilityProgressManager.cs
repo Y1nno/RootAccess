@@ -4,6 +4,7 @@ public class AbilityProgressManager : MonoBehaviour
 {
     public bool canEliDoubleJump = false;
     public bool canOliviaShoot = false;
+    public int fusionatorParts = 0;
 
     private Jumper jumper;
     private GameObject capsule;

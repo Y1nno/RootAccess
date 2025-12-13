@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class AbilityProgressBoolTrigger : MonoBehaviour
 {
+    const int fusionatorPartsNeeded = 3;
+
     [Tooltip("The ID of the ability we want to change")]
     public string id;
 
@@ -20,7 +22,11 @@ public class AbilityProgressBoolTrigger : MonoBehaviour
         switch (value)
         {
             case NullableBool.True:
-                mgr.ChangeAbilityBool(id, true);
+                mgr.fusionatorParts += 1;
+                if (fusionatorPartsNeeded <= mgr.fusionatorParts && !mgr.canOliviaShoot)
+                {
+                    mgr.ChangeAbilityBool(id, true);
+                }
                 break;
 
             case NullableBool.False:

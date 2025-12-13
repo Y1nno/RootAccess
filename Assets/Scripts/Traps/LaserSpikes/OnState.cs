@@ -6,6 +6,7 @@ public class OnState : EnemyState
     public Animator animator;
 
     public float onStateLength = 10f;
+    public bool infinite = false;
     
     private float internalLengthTimer = 0;
 
@@ -18,7 +19,7 @@ public class OnState : EnemyState
 
     public override void Tick(EnemyStateMachine machine)
     {
-        if (internalLengthTimer <= 0f)
+        if (internalLengthTimer <= 0f || infinite)
         {
             machine.ChangeState(offState.stateId);
             return;

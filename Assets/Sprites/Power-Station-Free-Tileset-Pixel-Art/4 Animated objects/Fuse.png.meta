@@ -1,0 +1,753 @@
+fileFormatVersion: 2
+guid: a71b3dbbedf4588458e205c5b8b94418
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1889537702765113337
+    second: Fuse_0
+  - first:
+      213: 4747193356906459084
+    second: Fuse_1
+  - first:
+      213: 5057281441836215790
+    second: Fuse_2
+  - first:
+      213: -6114884525526456438
+    second: Fuse_3
+  - first:
+      213: -7853626966578128536
+    second: Fuse_4
+  - first:
+      213: 3486182598056391985
+    second: Fuse_5
+  - first:
+      213: 4198469695835432845
+    second: Fuse_6
+  - first:
+      213: 4809740195852210763
+    second: Fuse_7
+  - first:
+      213: -8811193373125029703
+    second: Fuse_8
+  - first:
+      213: -3582805906943096371
+    second: Fuse_9
+  - first:
+      213: -6389766049319754624
+    second: Fuse_10
+  - first:
+      213: 4205210179053398382
+    second: Fuse_11
+  - first:
+      213: -4190120369505035303
+    second: Fuse_12
+  - first:
+      213: -8198412407039526102
+    second: Fuse_13
+  - first:
+      213: 886900513391468805
+    second: Fuse_14
+  - first:
+      213: -1059227806923429886
+    second: Fuse_15
+  - first:
+      213: -277875332853332596
+    second: Fuse_16
+  - first:
+      213: 2236423050858387476
+    second: Fuse_17
+  - first:
+      213: 4680523764839660704
+    second: Fuse_18
+  - first:
+      213: -1156879146490832858
+    second: Fuse_19
+  - first:
+      213: 1033471392397940996
+    second: Fuse_20
+  - first:
+      213: 2710874500189649994
+    second: Fuse_21
+  - first:
+      213: 3565591166486907569
+    second: Fuse_22
+  - first:
+      213: -7838565715944822195
+    second: Fuse_23
+  - first:
+      213: 8033891968561294351
+    second: Fuse_24
+  - first:
+      213: 6837120637675477274
+    second: Fuse_25
+  - first:
+      213: -8069552714067781747
+    second: Fuse_26
+  - first:
+      213: 6158797409121348669
+    second: Fuse_27
+  - first:
+      213: -7656099242697803330
+    second: Fuse_28
+  - first:
+      213: -8655327696933336981
+    second: Fuse_29
+  - first:
+      213: -4075105290008248699
+    second: Fuse_30
+  - first:
+      213: -59406389980209940
+    second: Fuse_31
+  - first:
+      213: -1558169552590586916
+    second: Fuse_32
+  - first:
+      213: -2278959387435958975
+    second: Fuse_33
+  - first:
+      213: 826499166070183954
+    second: Fuse_34
+  - first:
+      213: -5684761993847521013
+    second: Fuse_35
+  - first:
+      213: 4272609736790462714
+    second: Fuse_36
+  - first:
+      213: -8382775942907589383
+    second: Fuse_37
+  - first:
+      213: 840770904222738238
+    second: Fuse_38
+  - first:
+      213: -4082478716060968883
+    second: Fuse_39
+  - first:
+      213: 8478114331076489843
+    second: Fuse_40
+  - first:
+      213: 616915921078487442
+    second: Fuse_41
+  - first:
+      213: 734376193944433989
+    second: Fuse_42
+  - first:
+      213: -1707789377497044152
+    second: Fuse_43
+  - first:
+      213: 1893169078426065678
+    second: Fuse_44
+  - first:
+      213: -2667105893210692133
+    second: Fuse_45
+  - first:
+      213: 2173454504494099651
+    second: Fuse_46
+  - first:
+      213: 7350230032632942757
+    second: Fuse_47
+  - first:
+      213: 4075169663932482673
+    second: Fuse_48
+  - first:
+      213: -2586765647534689232
+    second: Fuse_49
+  - first:
+      213: -3880777203142975072
+    second: Fuse_50
+  - first:
+      213: 1568349825703692642
+    second: Fuse_51
+  - first:
+      213: 5711468761865552333
+    second: Fuse_52
+  - first:
+      213: 7319762320252174578
+    second: Fuse_53
+  - first:
+      213: 1419788533680960321
+    second: Fuse_54
+  - first:
+      213: -3801218293965112499
+    second: Fuse_55
+  - first:
+      213: 817966804933545101
+    second: Fuse_56
+  - first:
+      213: 6375384079259401364
+    second: Fuse_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fuse_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffa50b878cf83a10800000000000000
+      internalID: 1889537702765113337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfe086d43b61e140800000000000000
+      internalID: 4747193356906459084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeda2dd3da21f2640800000000000000
+      internalID: 5057281441836215790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87667d0ce0932ba0800000000000000
+      internalID: -6114884525526456438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8699eaa52ef420390800000000000000
+      internalID: -7853626966578128536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135bc433a98616030800000000000000
+      internalID: 3486182598056391985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d876384a1f5f34a30800000000000000
+      internalID: 4198469695835432845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4250bb9931afb240800000000000000
+      internalID: 4809740195852210763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b05b939f4a58b580800000000000000
+      internalID: -8811193373125029703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc94c799201574ec0800000000000000
+      internalID: -3582805906943096371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084e170f1adf257a0800000000000000
+      internalID: -6389766049319754624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69a550b068eb5a30800000000000000
+      internalID: 4205210179053398382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db168169b3b9d5c0800000000000000
+      internalID: -4190120369505035303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bf0445a53693e80800000000000000
+      internalID: -8198412407039526102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5016fc36157ee4c00800000000000000
+      internalID: 886900513391468805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208ec10fbeddc41f0800000000000000
+      internalID: -1059227806923429886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c850f656bd9c42cf0800000000000000
+      internalID: -277875332853332596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418d8e96aee590f10800000000000000
+      internalID: 2236423050858387476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0acba0ec09f84f040800000000000000
+      internalID: 4680523764839660704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuse_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6285b51bb80f1ffe0800000000000000
+      internalID: -1156879146490832858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 978e492246fbad04d97e4cbaad0a2f10
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":20.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Fuse_0: 1889537702765113337
+      Fuse_1: 4747193356906459084
+      Fuse_10: -6389766049319754624
+      Fuse_11: 4205210179053398382
+      Fuse_12: -4190120369505035303
+      Fuse_13: -8198412407039526102
+      Fuse_14: 886900513391468805
+      Fuse_15: -1059227806923429886
+      Fuse_16: -277875332853332596
+      Fuse_17: 2236423050858387476
+      Fuse_18: 4680523764839660704
+      Fuse_19: -1156879146490832858
+      Fuse_2: 5057281441836215790
+      Fuse_3: -6114884525526456438
+      Fuse_4: -7853626966578128536
+      Fuse_5: 3486182598056391985
+      Fuse_6: 4198469695835432845
+      Fuse_7: 4809740195852210763
+      Fuse_8: -8811193373125029703
+      Fuse_9: -3582805906943096371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
