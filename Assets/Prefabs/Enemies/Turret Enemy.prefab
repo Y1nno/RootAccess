@@ -47,11 +47,13 @@ MonoBehaviour:
   stateId: Idle
   turretTop: {fileID: 4273595870016553728}
   trackingState: {fileID: 7027774363904397970}
-  rotationUpperBound: 40
-  rotationLowerBound: -90
+  rotationUpperBound: 30
+  rotationLowerBound: -30
   waitTimer: 2
   turnRate: 40
   temp: 0
+  gizmoRadius: 30
+  gizmoSegments: 24
 --- !u!1 &1306501079920045809
 GameObject:
   m_ObjectHideFlags: 0

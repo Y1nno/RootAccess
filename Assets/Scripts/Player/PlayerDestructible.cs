@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerRespawner : MonoBehaviour
 {
-    public string respawnChildName = "RespawnPoint";
 
     private void OnDestroy()
     {
