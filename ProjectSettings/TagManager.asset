@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Fuse
+  - Platforms&Walls
   layers:
   - Default
   - TransparentFX

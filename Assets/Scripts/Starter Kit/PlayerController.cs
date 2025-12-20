@@ -51,12 +51,12 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && dialogueActive == true)
-        { 
+        {
             dialogueManager.GetComponent<SpriteSpeakerIndex>().ContinueDialogue();
         }
 
         if (dialogueActive) { return; }
-        
+
         //Moving Right
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
@@ -64,12 +64,14 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("Running", true);
             }
-                
+
             //When right key is pressed, accelerate towards the right...
             mover.AccelerateInDirection(new Vector2(1f, 0f));
 
             //And flip our entire body to face the right
-            transform.rotation = Quaternion.Euler(transform.rotation.x, 0f, transform.rotation.z);
+            var e = transform.eulerAngles;
+            e.y = 0f;
+            transform.eulerAngles = e;
         }
 
         //Moving Left
@@ -84,7 +86,9 @@ public class PlayerController : MonoBehaviour
             mover.AccelerateInDirection(new Vector2(-1f, 0f));
 
             //And flip our entire body to face the left
-            transform.rotation = Quaternion.Euler(transform.rotation.x, 180f, transform.rotation.z);
+            var e = transform.eulerAngles;
+            e.y = 180f;
+            transform.eulerAngles = e;
         }
 
         //When Jumping
@@ -92,7 +96,7 @@ public class PlayerController : MonoBehaviour
         {
             //If the jump key is pressed... jump!
             jumper.Jump();
-            
+
         }
         if (swapper.currentIndex == 1) // Olivia specific inputs
         {
